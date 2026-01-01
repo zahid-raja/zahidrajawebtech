@@ -1,0 +1,61 @@
+<!-- 22.	Pyramid Pattern with Nested Loop
+Write a JavaScript program to construct the following pattern, using a nested for loop.
+ 
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+Perform all programs using function -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid Pattern All-in-One</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #pattern-container {
+            font-size: 1.5rem;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pyramid Pattern</h1>
+    <pre id="pattern-container"></pre>
+
+    <script>
+        function generatePyramidPattern(rows) {
+            let pattern = '';
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    pattern += '*';
+                }
+                pattern += '\n';
+            }
+            return pattern;
+        }
+
+        const pyramid = generatePyramidPattern(5);
+
+        document.getElementById('pattern-container').textContent = pyramid;
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- 11.	Write a simple number guessing game. Provide a secret number and a guess.
+  Based on those numbers give players clues if their guess is higher, lower or correct -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #fff3e0;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Number Guessing Game</h2>
+
+<input type="number" id="secret" placeholder="Secret number">
+<br><br>
+<input type="number" id="guess" placeholder="Your guess">
+<br><br>
+
+<button onclick="checkGuess()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkGuess() {
+    let s = Number(secret.value);
+    let g = Number(guess.value);
+
+    if (g > s)
+        result.innerText = "Too High!";
+    else if (g < s)
+        result.innerText = "Too Low!";
+    else
+        result.innerText = "Correct!";
+}
+</script>
+
+</body>
+</html>

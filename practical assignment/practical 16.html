@@ -1,0 +1,31 @@
+<!-- 16.	Print Numbers: Use a for loop to print numbers from 1 to 10.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #f1f8e9;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Print Numbers (1 to 10)</h2>
+<button onclick="printNumbers()">Print</button>
+<p id="result"></p>
+
+<script>
+function printNumbers() {
+    let text = "";
+    for (let i = 1; i <= 10; i++) {
+        text += i + " ";
+    }
+    result.innerText = text;
+}
+</script>
+
+</body>
+</html>

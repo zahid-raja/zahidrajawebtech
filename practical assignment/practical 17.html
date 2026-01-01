@@ -1,0 +1,33 @@
+<!-- 17.	Sum of Numbers: Calculate the sum of numbers from 1 to 100 using a while loop. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #fff3e0;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Sum of Numbers (1 to 100)</h2>
+<button onclick="calculateSum()">Calculate</button>
+<p id="result"></p>
+
+<script>
+function calculateSum() {
+    let sum = 0;
+    let i = 1;
+    while (i <= 100) {
+        sum += i;
+        i++;
+    }
+    result.innerText = "Sum = " + sum;
+}
+</script>
+
+</body>
+</html>

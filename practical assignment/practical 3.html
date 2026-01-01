@@ -1,0 +1,32 @@
+<!-- 3.	Grade Calculator: Write a program that converts a numerical grade 
+ (0-100) to a letter grade (A, B, C, D, F) using if/else if/else. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; background: #e0ffe0; padding: 20px; }
+</style>
+</head>
+<body>
+
+<h2>Grade Calculator</h2>
+<input type="number" id="marks" placeholder="0 - 100">
+<button onclick="grade()">Get Grade</button>
+<p id="result"></p>
+
+<script>
+function grade() {
+    let m = marks.value;
+    let g;
+    if (m >= 90) g = "A";
+    else if (m >= 80) g = "B";
+    else if (m >= 70) g = "C";
+    else if (m >= 60) g = "D";
+    else g = "F";
+    result.innerText = "Grade: " + g;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 2.	Largest of Two Numbers: Write a program to find the largest of two given numbers.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; background: #f0f0f0; padding: 20px; }
+button { padding: 8px; }
+</style>
+</head>
+<body>
+
+<h2>Largest of Two Numbers</h2>
+<input type="number" id="a" placeholder="First number">
+<input type="number" id="b" placeholder="Second number">
+<button onclick="largest()">Find</button>
+<p id="result"></p>
+
+<script>
+function largest() {
+    let x = Number(a.value);
+    let y = Number(b.value);
+    document.getElementById("result").innerText =
+        (x > y) ? x + " is larger" : y + " is larger";
+}
+</script>
+
+</body>
+</html>

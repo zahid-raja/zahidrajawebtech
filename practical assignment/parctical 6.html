@@ -1,0 +1,31 @@
+<!-- 6.	Write a program that calculates the ticket price based on age with the
+  following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; background: #fce4ec; padding: 20px; }
+</style>
+</head>
+<body>
+
+<h2>Ticket Price</h2>
+<input type="number" id="age" placeholder="Enter age">
+<button onclick="price()">Calculate</button>
+<p id="result"></p>
+
+<script>
+function price() {
+    let a = age.value;
+    let p;
+    if (a < 12) p = 5;
+    else if (a < 18) p = 10;
+    else if (a < 60) p = 20;
+    else p = 15;
+    result.innerText = "Ticket Price: $" + p;
+}
+</script>
+
+</body>
+</html>

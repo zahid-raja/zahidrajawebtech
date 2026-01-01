@@ -1,0 +1,33 @@
+<!-- 19.	Array Iteration (for...of): Iterate over an array of strings and
+  print each element -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #e0f2f1;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Array Iteration</h2>
+<button onclick="iterateArray()">Show</button>
+<p id="result"></p>
+
+<script>
+function iterateArray() {
+    let fruits = ["Apple", "Banana", "Mango", "Orange"];
+    let text = "";
+    for (let item of fruits) {
+        text += item + " ";
+    }
+    result.innerText = text;
+}
+</script>
+
+</body>
+</html>

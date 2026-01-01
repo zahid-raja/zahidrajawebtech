@@ -1,0 +1,38 @@
+<!-- 20.	Object Property Iteration (for...in):
+  Iterate over the properties of an object and print each key-value pair. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #fce4ec;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Object Property Iteration</h2>
+<button onclick="iterateObject()">Show</button>
+<p id="result"></p>
+
+<script>
+function iterateObject() {
+    let student = {
+        name: "John",
+        age: 20,
+        grade: "A"
+    };
+
+    let text = "";
+    for (let key in student) {
+        text += key + ": " + student[key] + " | ";
+    }
+    result.innerText = text;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- 12.	Sign of Product of Three Numbers
+Write a JavaScript conditional statement to find the sign of the product of three numbers.
+ Display an alert box with the specified sign.
+Sample numbers : 3, -7, 2
+Output : The sign is - -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial;
+    background: #e8f5e9;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Sign of Product of Three Numbers</h2>
+
+<input type="number" id="n1" placeholder="Number 1">
+<br><br>
+<input type="number" id="n2" placeholder="Number 2">
+<br><br>
+<input type="number" id="n3" placeholder="Number 3">
+<br><br>
+
+<button onclick="checkSign()">Check Sign</button>
+
+<script>
+function checkSign() {
+    let a = n1.value;
+    let b = n2.value;
+    let c = n3.value;
+
+    let product = a * b * c;
+    let sign;
+
+    if (product > 0)
+        sign = "+";
+    else if (product < 0)
+        sign = "-";
+    else
+        sign = "0";
+
+    alert("The sign is: " + sign);
+}
+</script>
+
+</body>
+</html>

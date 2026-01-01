@@ -1,0 +1,28 @@
+<!-- 8.	Write a program that calculates a discount based on the purchase amount.
+ Prices equal or over 100 discount have a discount of 20. 
+ Prices equal or over 50 have a discount of 10. Otherwise discount is 0 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; background: #fffde7; padding: 20px; }
+</style>
+</head>
+<body>
+
+<h2>Discount Calculator</h2>
+<input type="number" id="amount">
+<button onclick="discount()">Calculate</button>
+<p id="result"></p>
+
+<script>
+function discount() {
+    let a = amount.value;
+    let d = (a >= 100) ? 20 : (a >= 50) ? 10 : 0;
+    result.innerText = "Discount: $" + d;
+}
+</script>
+
+</body>
+</html>
